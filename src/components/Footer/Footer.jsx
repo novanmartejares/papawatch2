@@ -46,10 +46,10 @@ export default function Footer() {
       <div className="alphabet-list d-flex">{links}</div>
       <div className="copyright-text">
         <p>
-          Papavanz does not store any files on our server; we only link to the
+          Papawatch does not store any files on our server; we only link to the
           media which is hosted on 3rd party services.
         </p>
-        <p>&copy; Papavanz All rights reserved.</p>
+        <p>&copy; Papawatch All rights reserved.</p>
       </div>
     </div>
   );
