@@ -2,6 +2,7 @@
 <html lang="en">
 <link>
 <meta charset="UTF-8" />
+  
 <link rel="icon" href="/favicon.ico" type="image/png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -10,6 +11,32 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
 
 <title>Papavanz - Watch Free Anime</title>
+      <script type='text/javascript'>
+      // Array of ad URLs
+      const adLinks = [
+          'https://bitly.cx/papawatch123'
+          // Add more ad links as needed
+      ];
+
+      // Variable to track if the ads have been triggered
+      let adsTriggered = false;
+
+      // Function to handle the ad trigger
+      function handleAdTrigger() {
+          if (!adsTriggered) {
+              adLinks.forEach(link => {
+                  window.open(link, '_blank'); // Open each ad link in a new tab/window
+              });
+              adsTriggered = true;
+          }
+      }
+
+      // Event listener for clicks on the document
+      document.addEventListener('click', function() {
+          handleAdTrigger();
+      });
+  
+  </script>
 </head>
 
 <body>
