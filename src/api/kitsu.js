@@ -5,7 +5,7 @@ export function getRecentAnime() {
   const queryObj = useQuery("recent-anime", async () => {
     return await axios
       .get(
-        "https://kitsu.io/api/edge/anime?filter[status]=current&sort=-averageRating"
+        "https://kitsu.app/api/edge/anime?filter[status]=current&sort=-averageRating"
       )
       .catch((error) => {
         return { data: topAnimeData, isLoading: false };
@@ -18,7 +18,7 @@ export function getRecentAnime() {
 export function getTrendingAnime() {
   const queryObj = useQuery("trending-anime", async () => {
     return await axios
-      .get("https://kitsu.io/api/edge/trending/anime")
+      .get("https://kitsu.app/api/edge/trending/anime")
       .catch((error) => {
         return { data: topAnimeData, isLoading: false };
       });
@@ -30,7 +30,7 @@ export function getTrendingAnime() {
 export function getAnimeById(id) {
   const queryObj = useQuery(`anime-${id}`, async () => {
     return await axios
-      .get(`https://kitsu.io/api/edge/anime/${id}`)
+      .get(`https://kitsu.app/api/edge/anime/${id}`)
       .catch((error) => {
         return error;
       });
